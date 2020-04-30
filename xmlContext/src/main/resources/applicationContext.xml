@@ -5,9 +5,12 @@
                 http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="message" class="com.tms.javaconfig.Message" />
+    <bean id="message" class="com.tms.javaconfig.Message" >
+        <property name="message" value="Initial message" />
+    </bean>
 
     <bean id="messageHolder" class="com.tms.javaconfig.MessageHolder">
+        <property name="repeatTimes" value="2" />
         <constructor-arg ref="message" />
     </bean>
 </beans>

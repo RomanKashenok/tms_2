@@ -1,6 +1,7 @@
 package com.tms.javaconfig;
 
 public class Message {
+
     private String message;
 
     public String getMessage() {
@@ -15,4 +16,9 @@ public class Message {
     public String toString() {
         return "Message: " + this.message;
     }
+
+    public void firstMethod() {
+        message = "Message from init-method";
+    }
+
 }

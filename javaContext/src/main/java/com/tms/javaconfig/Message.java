@@ -1,6 +1,12 @@
 package com.tms.javaconfig;
 
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+
+@Component
 public class Message {
+
     private String message;
 
     public String getMessage() {
@@ -14,5 +20,10 @@ public class Message {
     @Override
     public String toString() {
         return "Message: " + this.message;
+    }
+
+    @PostConstruct
+    public void firstMethod() {
+        message = "Message from init-method";
     }
 }

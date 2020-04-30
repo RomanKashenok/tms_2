@@ -8,13 +8,8 @@ public class MessageRunner {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(MessageConfig.class);
 
-        Message message = context.getBean(Message.class);
+        MessageHolderHolder mhh = context.getBean(MessageHolderHolder.class);
 
-        MessageHolder messageHolder = context.getBean(MessageHolder.class);
-
-        message.setMessage("This is simple message.");
-        System.out.println(message);
-
-        messageHolder.printMessage();
+        mhh.printSmth();
     }
 }

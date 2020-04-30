@@ -7,15 +7,33 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MessageRunner {
     public static void main(String[] args) {
+
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
 
-        Message message = context.getBean(Message.class);
+        Message m1 = context.getBean(Message.class);
+        System.out.println(m1.hashCode());
+        System.out.println(m1.toString());
 
-        MessageHolder messageHolder = context.getBean(MessageHolder.class);
+        Message m2 = context.getBean(Message.class);
+        System.out.println(m2.hashCode());
+        System.out.println(m2.toString());
 
-        message.setMessage("This is simple message.");
-        System.out.println(message);
+        Message m3 = context.getBean(Message.class);
+        System.out.println(m1.hashCode());
+        System.out.println(m3.toString());
 
-        messageHolder.printMessage();
+        Message m4 = context.getBean(Message.class);
+        System.out.println(m2.hashCode());
+        System.out.println(m4.toString());
+
+        Message m5 = context.getBean(Message.class);
+        System.out.println(m1.hashCode());
+        System.out.println(m5.toString());
+
+        Message m6 = context.getBean(Message.class);
+        System.out.println(m2.hashCode());
+        System.out.println(m6.toString());
+
+
     }
 }
