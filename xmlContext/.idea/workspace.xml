@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92fc32a3-01ed-4675-b365-c6906eb801d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../iocdi/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../iocdi/src/main/java/com/tms/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../iocdi/src/main/java/com/tms/entity/Cafedra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../iocdi/src/main/java/com/tms/entity/Deputat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../iocdi/src/main/java/com/tms/entity/GovermentCafedra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../iocdi/src/main/java/com/tms/entity/UniversityCafedra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaContext/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageHolderHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageHolderImpl1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageHolderImpl2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaContext/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/src/main/java/com/tms/javaconfig/MessageRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/MessageConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/MessageConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/MessageHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/MessageHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/MessageRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/target/classes/com/tms/javaconfig/MessageRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tms/javaconfig/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tms/javaconfig/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tms/javaconfig/MessageHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tms/javaconfig/MessageHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tms/javaconfig/MessageRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tms/javaconfig/MessageRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tms/javaconfig/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tms/javaconfig/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tms/javaconfig/MessageHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tms/javaconfig/MessageHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tms/javaconfig/MessageRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tms/javaconfig/MessageRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlContext.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,7 +59,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -170,7 +141,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588271471471" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588271803966" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -222,16 +193,15 @@
       <option name="presentableId" value="Default" />
       <updated>1588173181714</updated>
       <workItem from="1588173188105" duration="1257000" />
-      <workItem from="1588265139076" duration="5028000" />
+      <workItem from="1588265139076" duration="5030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6285000" />
+    <option name="totallyTimeSpent" value="6287000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
