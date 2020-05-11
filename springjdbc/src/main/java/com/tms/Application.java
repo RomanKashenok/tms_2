@@ -18,15 +18,20 @@ public class Application {
         ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
         UserDao dao = context.getBean(UserDao.class);
 
-        List<User> users = dao.getUsers();
-        System.out.println(users);
+        User user = dao.getById(1);
+        System.out.println(user);
 
-        User user = new User();
-        user.setName("Raman");
+//        List<User> users = dao.getUsers();
+//        System.out.println(users);
+//
+//        User user = new User();
+//        user.setName("Raman");
+//
+//        dao.addUser(user);
+//
+//        users = dao.getUsers();
+//        System.out.println(users);
 
-        dao.addUser(user);
 
-        users = dao.getUsers();
-        System.out.println(users);
     }
 }

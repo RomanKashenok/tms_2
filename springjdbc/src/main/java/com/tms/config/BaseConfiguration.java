@@ -5,12 +5,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
 @Configuration
-//@PropertySource("classpath:database.properties")
+@PropertySource("classpath:database.properties")
 public class BaseConfiguration {
 
     @Autowired
@@ -29,8 +30,13 @@ public class BaseConfiguration {
     DataSource getDataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setUrl(environment.getProperty("url"));
-        ds.setUsername(environment.getProperty("username"));
+        ds.setUsername(environment.getProperty("login"));
         ds.setPassword(environment.getProperty("password"));
         return ds;
+    }
+
+    @Bean
+    JdbcTemplate jdbcTemplate(@Autowired DataSource dataSource) {
+        return new JdbcTemplate(dataSource);
     }
 }
