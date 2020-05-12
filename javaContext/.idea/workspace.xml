@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1051665d-bf0e-4217-b247-909f32a0b084" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lesson4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/annotation/MessageProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/bpp/MessageProcessingAnnotationBeanPostBrocessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/config/ContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/service/BadMessageHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/service/GoodMessageHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/tms/service/MessageHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/com/tms/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/com/tms/config/BaseConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/com/tms/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/com/tms/dao/UserRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/com/tms/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/resources/shema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/config/WebAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/model/AppUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/AppSecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/AppUserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/resources/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mvc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mvc/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcsecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcsecurity/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +31,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/javaconfig/MessageRunner.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,11 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="306">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../internationalization/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="26" selection-start-line="2" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -120,59 +132,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="javaConfig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringIoC" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaContext" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="javaConfig" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaContext" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaConfig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringIoC" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaContext" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="javaConfig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringIoC" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaContext" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="javaConfig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringIoC" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaContext" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="javaConfig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringIoC" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaContext" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaConfig" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaContext" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-              <item name="javaconfig" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,17 +233,18 @@
       <workItem from="1588255109103" duration="1235000" />
       <workItem from="1588266617785" duration="5000" />
       <workItem from="1588268430309" duration="3878000" />
+      <workItem from="1589215201392" duration="313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10197000" />
+    <option name="totallyTimeSpent" value="10510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -398,9 +392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -420,8 +411,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="306">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../internationalization/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>

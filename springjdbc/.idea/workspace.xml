@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3309f6-7cfd-40f0-8c4c-0f5b762f0ec9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../java-mvc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-mvc/src/main/java/com/tms/config/AppWebInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-mvc/src/main/java/com/tms/config/WebAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-mvc/src/main/java/com/tms/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-mvc/src/main/java/com/tms/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-mvc/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-mvc/src/main/webapp/WEB-INF/views/result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-mvc/src/main/webapp/WEB-INF/views/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/config/WebAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/model/AppUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/AppSecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/AppUserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/resources/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mvc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mvc/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaContext/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaContext/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcsecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcsecurity/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springjdbc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tms/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tms/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tms/config/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tms/config/BaseConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tms/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tms/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tms/dao/UserRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tms/dao/UserRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +33,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/BaseConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+              <folding>
+                <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -45,11 +63,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tms/config/BaseConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/tms/dao/UserRowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tms/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tms/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tms/config/BaseConfiguration.java" />
       </list>
     </option>
   </component>
@@ -77,7 +95,66 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -134,16 +211,17 @@
       <updated>1588874683020</updated>
       <workItem from="1588874684290" duration="1658000" />
       <workItem from="1589107882013" duration="413000" />
+      <workItem from="1589217242815" duration="1178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2071000" />
+    <option name="totallyTimeSpent" value="3249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -266,13 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/BaseConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -323,6 +394,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/BaseConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
