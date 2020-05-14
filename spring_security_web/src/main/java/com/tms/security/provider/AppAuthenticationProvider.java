@@ -12,6 +12,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -24,6 +25,8 @@ public class AppAuthenticationProvider implements AuthenticationProvider {
     private StudentDao studentDao;
     @Autowired
     private RoleDao roleDao;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public Authentication authenticate(Authentication auth) throws AuthenticationException {
@@ -32,7 +35,8 @@ public class AppAuthenticationProvider implements AuthenticationProvider {
             throw new UsernameNotFoundException(String.format("User not found: %s", auth.getName()));
         }
         String password = auth.getCredentials().toString();
-        if(!password.equals(user.getPassword())) {
+
+        if(!passwordEncoder.matches(password, user.getPassword())){
             throw new BadCredentialsException("Incorrect username or password");
         }
         List<Role> roles = roleDao.findUserRoles(user.getId());
