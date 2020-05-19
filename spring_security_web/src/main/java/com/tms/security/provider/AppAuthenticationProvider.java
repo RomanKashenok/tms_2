@@ -39,8 +39,7 @@ public class AppAuthenticationProvider implements AuthenticationProvider {
         if(!passwordEncoder.matches(password, user.getPassword())){
             throw new BadCredentialsException("Incorrect username or password");
         }
-        List<Role> roles = roleDao.findUserRoles(user.getId());
-        List<SimpleGrantedAuthority> authorities = roles.stream().map(it -> new SimpleGrantedAuthority("ROLE_" + it.getName())).collect(Collectors.toList());
+        List<SimpleGrantedAuthority> authorities = user.getRoles().stream().map(it -> new SimpleGrantedAuthority("ROLE_" + it.getName())).collect(Collectors.toList());
 
         return new UsernamePasswordAuthenticationToken(user, null, authorities);
     }

@@ -1,52 +1,71 @@
 package com.tms.dao.impl;
 
+import com.tms.dao.RoleDao;
 import com.tms.dao.StudentDao;
+import com.tms.model.Role;
 import com.tms.model.Student;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
+import java.util.Collections;
 import java.util.List;
 
 @Repository
+@Transactional
 public class StudentDaoImpl implements StudentDao {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private SessionFactory sessionFactory;
+
+    @Autowired
+    private RoleDao roleDao;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
-    private final String SQL_SELECT_USER_BY_USERNAME = "SELECT e.id, e.username, e.password, e.name, e.surname, roles.name as role " +
-            " FROM students e " +
-            "LEFT OUTER JOIN student_roles " +
-            "ON e.id= student_roles.student_id " +
-            "LEFT OUTER JOIN roles " +
-            "ON student_roles.role_id = roles.id WHERE e.username = ?";
-
-    private final String SQL_SELECT_USER_BY_ID = "SELECT * FROM students id = ?";
-
-    private final String SQL_SELECT_ALL_USERS = "SELECT * FROM students";
-
     @Override
     public Student findByUsername(String username) {
-        return jdbcTemplate.queryForObject(SQL_SELECT_USER_BY_USERNAME, new StudentMapper(), username);
+        Session session = sessionFactory.getCurrentSession();
+        Query<Student> findByUsername = session.createQuery("from Student where username = :login");
+        findByUsername.setParameter("login", username);
+        return findByUsername.getSingleResult();
+
+//        Criteria crit = session.createCriteria(Student.class);
+//        crit.add(Restrictions.eq("username", username));
+//        Student student = (Student) crit.uniqueResult();
+//        return student;
+
+//        CriteriaBuilder cb = session.getCriteriaBuilder();
+//        CriteriaQuery cr = cb.createQuery(Student.class);
+//        Root<Student> root = cr.from(Student.class);
+//        cr.where(root.get("username").in(username));
+//        cr.select(root);
+//        Query<Student> query = session.createQuery(cr);
+//        Student result = query.getSingleResult();
+//
+//        return result;
     }
 
     @Override
     public List<Student> findAll() {
-        return jdbcTemplate.query(SQL_SELECT_ALL_USERS, new StudentMapper());
+        return sessionFactory.getCurrentSession().createQuery("from Student").list();
     }
 
     @Override
     public void addStudent(Student student) {
-        jdbcTemplate.update("INSERT INTO students (username, password, name, surname) VALUES (?, ?, ?, ?)",
-                student.getUsername(), passwordEncoder.encode(student.getPassword()), student.getName(), student.getSurname());
-
-        Integer id = jdbcTemplate.queryForObject("SELECT id FROM students WHERE username = ?", Integer.class, student.getUsername());
-
-        jdbcTemplate.update("INSERT INTO student_roles (student_id, role_id) VALUES (?, ?)", id, 2);
+        student.setPassword(passwordEncoder.encode(student.getPassword()));
+        Role role = roleDao.findRoleUser("USER");
+        student.setRoles(Collections.singletonList(role));
+        sessionFactory.getCurrentSession().save(student);
     }
 }

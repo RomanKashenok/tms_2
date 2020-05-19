@@ -13,5 +13,9 @@
 <h1>${message}</h1>
 
 <h3>${error}</h3>
+<h3>${errors}</h3>
+<c:forEach var="error" items="errors">
+    <c:out value="${error}">${error}</c:out>
+</c:forEach>
 </body>
 </html>

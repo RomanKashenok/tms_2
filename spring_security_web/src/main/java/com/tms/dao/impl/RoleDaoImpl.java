@@ -2,26 +2,31 @@ package com.tms.dao.impl;
 
 import com.tms.dao.RoleDao;
 import com.tms.model.Role;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
+@Transactional
 public class RoleDaoImpl implements RoleDao {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
-
-    private final String SQL_USER_ROLES = "SELECT roles.id, roles.name FROM students " +
-            "LEFT OUTER JOIN student_roles " +
-            "ON students.id= student_roles.student_id " +
-            "LEFT OUTER JOIN roles " +
-            "ON student_roles.role_id = roles.id WHERE students.id = ?";
+    private SessionFactory sessionFactory;
 
     @Override
-    public List<Role> findUserRoles(Long userId) {
-        return jdbcTemplate.query(SQL_USER_ROLES, new RoleMapper(), userId);
+    public List<Role> findAllRoles() {
+        return sessionFactory.getCurrentSession().createQuery("from Role").list();
+    }
+
+    @Override
+    public Role findRoleUser(String roleName) {
+        Query<Role> query = sessionFactory.getCurrentSession().createQuery("from Role where name = :rolename");
+        query.setParameter("rolename", roleName);
+
+        return query.getSingleResult();
     }
 }

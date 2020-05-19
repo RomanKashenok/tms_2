@@ -26,12 +26,11 @@ public class AppUserDetailService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Student student = studentDao.findByUsername(username);
-        List<Role> roles = roleDao.findUserRoles(student.getId());
 
         return User.builder()
                 .username(student.getUsername())
                 .password(student.getPassword())
-                .roles(roles.stream().map(Role::getName).collect(Collectors.joining()))
+                .roles(student.getRoles().stream().map(Role::getName).collect(Collectors.joining()))
                 .build();
     }
 }

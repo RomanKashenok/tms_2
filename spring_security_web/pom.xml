@@ -17,6 +17,7 @@
         <spring-data-jpa.version>2.1.17.RELEASE</spring-data-jpa.version>
         <mysql-connector.version>8.0.20</mysql-connector.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
+        <hibernate.version>5.4.15.Final</hibernate.version>
     </properties>
 
     <dependencies>
@@ -96,6 +97,18 @@
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
             <version>${commons-dbcp.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <!-- Lombok-->
