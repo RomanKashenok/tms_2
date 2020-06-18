@@ -7,25 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96ac93b7-1f36-4fcb-94e4-57a2368febfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/config/WebAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/RoleRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/dao/UserRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/model/AppUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/AppSecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/AppUserDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/security/service/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/java/com/tms/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mvcsecurity/src/main/resources/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mvcsecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcsecurity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/repository/BookRepositoryImplMongo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/repository/BookRepositoryImplMysql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layer_architecture/src/main/java/com/tms/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_security_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_security_web/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,12 +27,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/WebAppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +40,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/AppWebInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -151,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,50 +173,6 @@
               <item name="java-mvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-mvc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-mvc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-mvc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-mvc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-mvc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-mvc" type="b2602c69:ProjectViewProjectNode" />
@@ -242,6 +202,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -364,16 +325,17 @@
       <workItem from="1588870059302" duration="3649000" />
       <workItem from="1589180534910" duration="4308000" />
       <workItem from="1589211605047" duration="1709000" />
+      <workItem from="1591896776678" duration="1255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9666000" />
+    <option name="totallyTimeSpent" value="10921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -450,22 +412,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/AppWebInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/SecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -503,16 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/WebAppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -533,7 +469,29 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/AppWebInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tms/config/WebAppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
