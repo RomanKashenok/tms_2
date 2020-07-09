@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SubscriberDataService from "./SubscriberDataService";
+import SubscriberDataService from "../service/SubscriberDataService";
 
 class SubscribersListComponent extends Component {
 

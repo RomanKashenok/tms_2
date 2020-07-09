@@ -1,8 +1,9 @@
 import axios from 'axios'
 
-const APP_API_URL = `http://localhost:9090`;
+export const APP_API_URL = `http://localhost:9090`;
 const SUBSCRIBER_API_URL = `${APP_API_URL}/subscribers`;
 const SUBSCRIBER_API_URL_SEARCH = `${SUBSCRIBER_API_URL}/search}`;
+
 
 class SubscriberDataService {
 
@@ -23,8 +24,7 @@ class SubscriberDataService {
     }
 
     createSubscriber(user) {
-        return axios.post(`${SUBSCRIBER_API_URL}`, user);
-    }
+        return axios.post(`${SUBSCRIBER_API_URL}`, user)};
 
     updateSubscriber(id, user) {
         return axios.put(`${SUBSCRIBER_API_URL}`, user);

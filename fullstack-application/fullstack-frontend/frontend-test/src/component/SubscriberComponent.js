@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {ErrorMessage, Field, Form, Formik} from 'formik';
-import SubscriberDataService from "./SubscriberDataService";
+import SubscriberDataService from "../service/SubscriberDataService";
 
 class SubscriberComponent extends Component {
 
