@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.12</lombok.version>
         <h2.version>1.4.190</h2.version>
-        <spring.version>5.2.5.RELEASE</spring.version>
+        <spring.version>5.3.19</spring.version>
         <spring-data-jpa.version>2.1.17.RELEASE</spring-data-jpa.version>
         <mysql-connector.version>8.0.20</mysql-connector.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
